@@ -1,0 +1,22 @@
+docker run -d --name media_bot -e "BOT_TOKEN=8081348600:AAFPYUSrmIItTZXbZsrkpTf97aaU6hYUSIk" tg_media_bot
+
+
+
+docker run -d \
+  --name media-bot \
+  -e "BOT_TOKEN=8081348600:AAFPYUSrmIItTZXbZsrkpTf97aaU6hYUSIk" \
+  --restart unless-stopped \
+  -v /etc/localtime:/etc/localtime:ro \
+  media-bot
+
+
+  docker run -d \
+  --restart unless-stopped \
+  -e BOT_TOKEN="8081348600:AAFPYUSrmIItTZXbZsrkpTf97aaU6hYUSIk" \
+  -v $(pwd)/downloads:/app/downloads \
+  -v $(pwd)/cookies.txt:/app/cookies.txt \
+  --name mybot \
+  mybot
+
+
+  docker run -e "BOT_TOKEN=8081348600:AAFPYUSrmIItTZXbZsrkpTf97aaU6hYUSIk" tg_downloader_bot
