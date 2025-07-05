@@ -1,3 +1,16 @@
 {
-  "dockerfile_path": "./Dockerfile"
+  "name": "video-bot",
+  "description": "Go 1.23.4 Telegram bot (Docker)",
+  "env": {
+    "BOT_TOKEN": { "required": true },
+    "WEBHOOK_URL": { "required": true },
+    "PORT": { "required": false, "default": "8080" }
+  },
+  "formation": {
+    "web": {
+      "dockerfile_path": "Dockerfile",
+      "amount": 1,
+      "size": "M"
+    }
+  }
 }
