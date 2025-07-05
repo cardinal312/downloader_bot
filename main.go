@@ -702,12 +702,12 @@ func main() {
 
 	updates := bot.GetUpdatesChan(u)
 
-	for update := range updates {
-		if update.Message != nil {
-			msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Привет, я работаю!")
-			bot.Send(msg)
-		}
-	}
+	// for update := range updates {
+	// 	if update.Message != nil {
+	// 		msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Привет, я работаю!")
+	// 		bot.Send(msg)
+	// 	}
+	// }
 
 	/////
 	if err := checkDiskSpace(); err != nil {
