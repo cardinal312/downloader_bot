@@ -19,4 +19,6 @@ docker run -d \
   mybot
 
 
-  docker run -e "BOT_TOKEN=8081348600:AAFPYUSrmIItTZXbZsrkpTf97aaU6hYUSIk" tg_downloader_bot
+docker build -t video-bot .
+
+docker run -e "BOT_TOKEN=8081348600:AAFPYUSrmIItTZXbZsrkpTf97aaU6hYUSIk" video-bot
