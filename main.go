@@ -766,9 +766,9 @@ func main() {
 	// 		bot.Send(msg)
 	// 	}
 	// }
-	for {
-		time.Sleep(1 * time.Hour)
-	}
+	// for {
+	// 	time.Sleep(1 * time.Hour)
+	// }
 }
 
 /// alternativ
