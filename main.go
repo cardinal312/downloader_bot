@@ -340,8 +340,6 @@ import (
 
 	"gopkg.in/telebot.v3"
 	"gopkg.in/yaml.v3"
-
-	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
 type Config struct {
@@ -685,22 +683,22 @@ func checkDiskSpace() error {
 
 func main() {
 
-	botToken := os.Getenv("BOT_TOKEN")
-	if botToken == "" {
-		log.Fatal("BOT_TOKEN is not set")
-	}
+	// botToken := os.Getenv("BOT_TOKEN")
+	// if botToken == "" {
+	// 	log.Fatal("BOT_TOKEN is not set")
+	// }
 
-	bot, err := tgbotapi.NewBotAPI(botToken)
-	if err != nil {
-		log.Panic(err)
-	}
+	// bot, err := tgbotapi.NewBotAPI(botToken)
+	// if err != nil {
+	// 	log.Panic(err)
+	// }
 
-	log.Printf("Бот запущен: @%s", bot.Self.UserName)
+	// log.Printf("Бот запущен: @%s", bot.Self.UserName)
 
-	u := tgbotapi.NewUpdate(0)
-	u.Timeout = 60
+	// u := tgbotapi.NewUpdate(0)
+	// u.Timeout = 60
 
-	updates := bot.GetUpdatesChan(u)
+	// updates := bot.GetUpdatesChan(u)
 
 	// for update := range updates {
 	// 	if update.Message != nil {
@@ -762,11 +760,14 @@ func main() {
 	log.Println("Бот запущен...")
 	b.Start()
 
-	for update := range updates {
-		if update.Message != nil {
-			msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Привет!")
-			bot.Send(msg)
-		}
+	// for update := range updates {
+	// 	if update.Message != nil {
+	// 		msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Привет!")
+	// 		bot.Send(msg)
+	// 	}
+	// }
+	for {
+		time.Sleep(1 * time.Hour)
 	}
 }
 
