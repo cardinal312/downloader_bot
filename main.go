@@ -717,7 +717,7 @@ func main() {
 		Poller: &telebot.LongPoller{Timeout: 30 * time.Second},
 	}
 
-	pref.Token = "8081348600:AAFPYUSrmIItTZXbZsrkpTf97aaU6hYUSIk"
+	pref.Token = "7920464230:AAF7Us_YjGvD44jm06QizxFTNjvmPXjnrvo"
 
 	b, err := telebot.NewBot(pref)
 	if err != nil {
