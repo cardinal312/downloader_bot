@@ -685,9 +685,9 @@ func checkDiskSpace() error {
 
 func main() {
 
-	botToken := os.Getenv("TELEGRAM_TOKEN")
+	botToken := os.Getenv("BOT_TOKEN")
 	if botToken == "" {
-		log.Fatal("TELEGRAM_TOKEN is not set")
+		log.Fatal("BOT_TOKEN is not set")
 	}
 
 	bot, err := tgbotapi.NewBotAPI(botToken)
