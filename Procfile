@@ -1,2 +1,2 @@
 worker: golang main.go
-web: golang -m http.server $PORT
+web: ./bin/video-bot --port=$PORT
