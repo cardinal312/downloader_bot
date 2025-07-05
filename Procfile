@@ -1,6 +1,1 @@
-
-
-
-
-
- ./bin/video-bot
+worker: ./bin/video-bot
