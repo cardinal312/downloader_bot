@@ -1,2 +1,2 @@
-web: ./bin/video-bot
+web: ./bin/media-bot
 
