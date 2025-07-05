@@ -10,7 +10,7 @@
     "web": {
       "dockerfile_path": "Dockerfile",
       "amount": 1,
-      "size": "M"
+      "size": "S"
     }
   }
 }
