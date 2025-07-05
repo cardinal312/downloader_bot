@@ -1,3 +1,0 @@
-web: ./bin/video-bot
-
-
